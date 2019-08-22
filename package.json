@@ -1,0 +1,28 @@
+{
+  "name": "weatherapp",
+  "version": "1.0.0",
+  "description": "Weather app using node.js, express.js, Javascript",
+  "main": "index.js",
+  "scripts": {
+    "devStart": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arod7533/WeatherApp.git"
+  },
+  "author": "Tony Rodriguez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arod7533/WeatherApp/issues"
+  },
+  "homepage": "https://github.com/arod7533/WeatherApp#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.4",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "dotenv": "^8.1.0",
+    "nodemon": "^1.19.1"
+  }
+}

@@ -1,0 +1,15 @@
+html {
+    height: 100%;
+}
+
+body { 
+    background-color: #293F58 !important;
+    /* background-image: linear-gradient(to bottom right,  lightyellow, blue 100%); */
+    
+    height: 100%;
+}
+
+#geo {
+    background-color: lightpink;
+}
+
