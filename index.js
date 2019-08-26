@@ -2,23 +2,19 @@ if (process.env.NODE_ENV !== 'Production') {
     require('dotenv').config()
 }
 
-const DARKSKY_API_KEY = process.env.DARKSKY_API_KEY
-
-const path = require('path');
 const express = require('express');
 const app = express();
 
-app.use(express.json());
-app.use(express.static(__dirname + '/public'));
-app.use('/css',express.static(path.join(__dirname, 'public/css')));
-app.use('/js',express.static(path.join(__dirname, 'public/js')));
-app.use('/img',express.static(path.join(__dirname, 'public/img')));
+const path = require('path');
+app.use('/css', express.static(path.join(__dirname, 'public/css')));
+app.use('/js', express.static(path.join(__dirname, 'public/js')));
+app.use('/img', express.static(path.join(__dirname, 'public/img')));
 
+const weather = require('./routes/weather');
+app.use('/weather', weather);
 
-app.post('/weather', (req,res) => {
-    
-})
-
+const api = require('./routes/api');
+app.use('/api/v1/', api);
 
 var server = app.listen(8000, function () {
     var host = server.address().address
