@@ -3,7 +3,7 @@ html {
 }
 
 body { 
-    background-color: #293F58 !important;
+    background-color: lightblue !important;
     /* background-image: linear-gradient(to bottom right,  lightyellow, blue 100%); */
     
     height: 100%;
@@ -12,4 +12,29 @@ body {
 #geo {
     background-color: lightpink;
 }
+
+.card-title, .card-text{
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+#weather {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+
+#desc {
+    text-transform: capitalize;
+}
+
+
+
 

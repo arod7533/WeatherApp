@@ -12,7 +12,7 @@ app.use('/img', express.static(path.join(__dirname, 'public/img')));
 app.use('/html', express.static(path.join(__dirname, 'public/html')));
 
 const weather = require('./routes/weather');
-app.use('/weather', weather);
+app.use('/', weather);
 
 const api = require('./routes/api');
 app.use('/api/v1/', api);
